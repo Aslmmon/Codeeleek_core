@@ -50,7 +50,6 @@ class MyApp extends StatelessWidget {
                 MaterialPageRoute(
                   builder:
                       (context) => CoreLoadingScreen(
-                        lottieAssetPath: AppConstants.appLogoMotion,
                         onInitializationComplete: () {
                           print("finished");
                           Navigator.push(

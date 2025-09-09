@@ -1,4 +1,5 @@
 import 'package:codeleek_core/ads/provider.dart';
+import 'package:codeleek_core/core/utils/app_constants.dart';
 import 'package:codeleek_core/theme/typography.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart'; // Import Riverpod
@@ -11,14 +12,9 @@ import 'package:codeleek_core/core/init/initialization_notifier.dart';
 
 class CoreLoadingScreen extends ConsumerStatefulWidget {
   // Change to ConsumerStatefulWidget
-  final String lottieAssetPath;
   final VoidCallback onInitializationComplete;
 
-  const CoreLoadingScreen({
-    super.key,
-    required this.lottieAssetPath,
-    required this.onInitializationComplete,
-  });
+  const CoreLoadingScreen({super.key, required this.onInitializationComplete});
 
   @override
   ConsumerState<CoreLoadingScreen> createState() => _CoreLoadingScreenState();
@@ -88,9 +84,10 @@ class _CoreLoadingScreenState extends ConsumerState<CoreLoadingScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Lottie.asset(
-                          widget.lottieAssetPath,
+                          AppConstants.appLogoMotion,
                           width: constraints.maxHeight * 0.7,
                           repeat: true,
+                          package: AppConstants.codeleekCorePackage,
                         ),
                         Expanded(
                           child: Column(
@@ -119,9 +116,10 @@ class _CoreLoadingScreenState extends ConsumerState<CoreLoadingScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Lottie.asset(
-                        widget.lottieAssetPath,
+                        AppConstants.appLogoMotion,
                         width: MediaQuery.sizeOf(context).width * 0.5,
                         repeat: true,
+                        package: AppConstants.codeleekCorePackage,
                       ),
                       Column(
                         children: [

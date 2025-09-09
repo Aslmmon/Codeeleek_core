@@ -65,8 +65,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/images/
-    - assets/lottie/
+    - packages/codeleek_core/assets/images/logo.png # <--- Add this line
+    - packages/codeleek_core/assets/lottie/codeleek_lottie.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -52,7 +52,13 @@ class _BrandingSplashState extends State<BrandingSplash> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // The brand logo remains static
-            Image.asset(AppConstants.appLogoSrc, width: 200, height: 200),
+            // Image(image: AssetImage(AppConstants.appLogoSrc)),
+            Image.asset(
+              AppConstants.appLogoSrc,
+              width: 200,
+              height: 200,
+              package: AppConstants.codeleekCorePackage,
+            ),
             const SizedBox(height: 20),
             // Use an AnimatedOpacity widget for the fade-in effect
             AnimatedOpacity(
