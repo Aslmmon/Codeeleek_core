@@ -83,11 +83,14 @@ class _CoreLoadingScreenState extends ConsumerState<CoreLoadingScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Lottie.asset(
-                          AppConstants.appLogoMotion,
-                          width: constraints.maxHeight * 0.7,
-                          repeat: true,
-                          package: AppConstants.codeleekCorePackage,
+                        Hero(
+                          tag: 'iconHeroTag', // Choose a unique tag for this specific icon
+                          child: Lottie.asset(
+                            AppConstants.appLogoMotion,
+                            width: constraints.maxHeight * 0.7,
+                            repeat: true,
+                            package: AppConstants.codeleekCorePackage,
+                          ),
                         ),
                         Expanded(
                           child: Column(

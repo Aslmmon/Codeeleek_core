@@ -53,11 +53,14 @@ class _BrandingSplashState extends State<BrandingSplash> {
           children: [
             // The brand logo remains static
             // Image(image: AssetImage(AppConstants.appLogoSrc)),
-            Image.asset(
-              AppConstants.appLogoSrc,
-              width: 200,
-              height: 200,
-              package: AppConstants.codeleekCorePackage,
+            Hero(
+              tag: 'iconHeroTag', // Choose a unique tag for this specific icon
+              child: Image.asset(
+                AppConstants.appLogoSrc,
+                width: 200,
+                height: 200,
+                package: AppConstants.codeleekCorePackage,
+              ),
             ),
             const SizedBox(height: 20),
             // Use an AnimatedOpacity widget for the fade-in effect
