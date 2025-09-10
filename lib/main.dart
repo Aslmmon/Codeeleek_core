@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       home: Builder(
         builder: (BuildContext builderContext) {
           // Use a new context provided by Builder
-          return BrandingSplash(
+          return CoreSplash(
             appName: "My Awesome Game" /* Optional custom app name */,
             onAnimationComplete: () {
               Navigator.push(

@@ -5,21 +5,21 @@ import 'package:codeleek_core/theme/typography.dart';
 import 'package:flutter/material.dart';
 import 'package:codeleek_core/theme/colors.dart';
 
-class BrandingSplash extends StatefulWidget {
+class CoreSplash extends StatefulWidget {
   final String? appName;
   final VoidCallback onAnimationComplete;
 
-  const BrandingSplash({
+  const CoreSplash({
     Key? key,
     this.appName,
     required this.onAnimationComplete,
   }) : super(key: key);
 
   @override
-  _BrandingSplashState createState() => _BrandingSplashState();
+  _CoreSplashState createState() => _CoreSplashState();
 }
 
-class _BrandingSplashState extends State<BrandingSplash> {
+class _CoreSplashState extends State<CoreSplash> {
   double _opacity = 0.0;
 
   @override
