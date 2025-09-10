@@ -1,4 +1,4 @@
-class AppConstants {
+class CoreConstants {
   static const String appLogoSrc =
       "assets/images/logo.png"; // in seconds
 

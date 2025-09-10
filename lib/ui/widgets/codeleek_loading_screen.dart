@@ -86,10 +86,10 @@ class _CoreLoadingScreenState extends ConsumerState<CoreLoadingScreen> {
                         Hero(
                           tag: 'iconHeroTag', // Choose a unique tag for this specific icon
                           child: Lottie.asset(
-                            AppConstants.appLogoMotion,
+                            CoreConstants.appLogoMotion,
                             width: constraints.maxHeight * 0.7,
                             repeat: true,
-                            package: AppConstants.codeleekCorePackage,
+                            package: CoreConstants.codeleekCorePackage,
                           ),
                         ),
                         Expanded(
@@ -119,10 +119,10 @@ class _CoreLoadingScreenState extends ConsumerState<CoreLoadingScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Lottie.asset(
-                        AppConstants.appLogoMotion,
+                        CoreConstants.appLogoMotion,
                         width: MediaQuery.sizeOf(context).width * 0.5,
                         repeat: true,
-                        package: AppConstants.codeleekCorePackage,
+                        package: CoreConstants.codeleekCorePackage,
                       ),
                       Column(
                         children: [

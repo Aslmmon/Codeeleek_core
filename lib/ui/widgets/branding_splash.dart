@@ -56,10 +56,10 @@ class _BrandingSplashState extends State<BrandingSplash> {
             Hero(
               tag: 'iconHeroTag', // Choose a unique tag for this specific icon
               child: Image.asset(
-                AppConstants.appLogoSrc,
+                CoreConstants.appLogoSrc,
                 width: 200,
                 height: 200,
-                package: AppConstants.codeleekCorePackage,
+                package: CoreConstants.codeleekCorePackage,
               ),
             ),
             const SizedBox(height: 20),
